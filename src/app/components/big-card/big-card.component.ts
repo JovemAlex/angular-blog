@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
 
-  imageCard: string = 'https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_2560x1440_Landscaped%20Store-2560x1440-79155f950f32c9790073feaccae570fb.jpg'
-  title: string = 'Grand Theft Auto V'
-  palceholder: string = 'GTA V'
+  @Input()
+  cardImage: string = ''
+  @Input()
+  cardTitle: string = ''
+  @Input()
+  carAltImage: string = ''
+  @Input()
+  cardAnchor: string = ''
+  @Input()
+  cardDescription: string = ''
 
   constructor() { }
 

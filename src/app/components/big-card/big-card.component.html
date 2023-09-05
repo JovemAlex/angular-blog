@@ -1,8 +1,8 @@
 <div class="container__big-card">
   <div class="big-card__photo">
     <img
-      src="{{ imageCard }}"
-      alt="{{ palceholder }}"
+      src="{{ cardImage }}"
+      alt="{{ carAltImage }}"
       height="200px"
       width="400px"
       srcset=""
@@ -11,13 +11,13 @@
 
   <div class="big-card__title">
     <h1>
-      <a href="#" target="_blank">
-        {{ title }}
+      <a href="{{ cardAnchor }}" target="_blank">
+        {{ cardTitle }}
       </a>
     </h1>
   </div>
 
   <div class="big-card__description">
-    <p><a href="#" target="_blank">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, quae fugit asperiores quos officiis deleniti perferendis cumque labore culpa id fuga dolore reprehenderit quis a. Modi voluptatibus quis laudantium maiores!</a></p>
+    <p><a href="#" target="_blank">{{ cardDescription }}</a></p>
   </div>
 </div>
