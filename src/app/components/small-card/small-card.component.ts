@@ -15,6 +15,8 @@ export class SmallCardComponent implements OnInit {
   carAltImage: string = ''
   @Input()
   cardAnchor: string = ''
+  @Input()
+  id: string = '0'
 
   constructor() { }
 

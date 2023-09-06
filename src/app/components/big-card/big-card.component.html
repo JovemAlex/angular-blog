@@ -11,13 +11,13 @@
 
   <div class="big-card__title">
     <h1>
-      <a href="{{ cardAnchor }}" target="_blank">
+      <a [routerLink]="['content', id]">
         {{ cardTitle }}
       </a>
     </h1>
   </div>
 
   <div class="big-card__description">
-    <p><a href="#" target="_blank">{{ cardDescription }}</a></p>
+    <p><a [routerLink]="['content', id]">{{ cardDescription }}</a></p>
   </div>
 </div>
